@@ -1,0 +1,16 @@
+img {
+    border: 5px solid green;
+    display: block;
+    margin: auto;
+}
+
+a {
+    color: blue;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map with Hotspots and Frames</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Embedded CSS -->
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+        iframe {
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Interactive Map with Hotspots and Frames</h1>
+
+<!-- Inline CSS -->
+<p style="color: red; font-size: 18px;">
+    Click the hotspots on the map to open websites.
+</p>
+
+<!-- Map Image -->
+<img src="file:///C:/Users/Prabu/OneDrive/Pictures/chennai-district-map.webp" usemap="#worldmap" width="600" height="350">
+
+<!-- Image Map -->
+<map name="worldmap">
+    <!-- Rectangle hotspot -->
+    <area shape="rect" coords="100,100,200,200" href="https://www.google.com" target="_blank">
+    
+    <!-- Circle hotspot -->
+    <area shape="circle" coords="300,150,40" href="https://www.wikipedia.org" target="_blank">
+
+    <!-- Polygon hotspot -->
+    <area shape="poly" coords="400,50,450,100,420,150,380,120" href="https://www.youtube.com" target="_blank">
+</map>
+
+<br><br>
+
+<!-- Links -->
+<a href="https://www.github.com" target="_blank">Visit GitHub</a><br>
+<a href="#frame">Go to Frame Section</a>
+
+<br><br>
+
+<!-- Frame -->
+<h2 id="frame">Embedded Frame Example</h2>
+<iframe src="https://www.wikipedia.org" width="600" height="300"></iframe>
+
+</body>
+</html>
